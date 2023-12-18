@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+
+    <!-- Dark Overlay View -->
+
+    <!-- Form Elements -->
+
+    <!-- Example: TextView for Comic Name -->
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#99000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1c1c1c">
+
+
+
+        <ImageView
+                android:id="@+id/imageViewBg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wallbg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#99000000" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:background="#2b2b2b"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextJudulComic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul Comic"
+            android:textColorHint="#a9a9a9"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextSinopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextJudulComic"
+            android:layout_marginTop="16dp"
+            android:hint="Sinopsis"
+            android:textColorHint="#a9a9a9"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextCreator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextSinopsis"
+            android:layout_marginTop="16dp"
+            android:hint="Creator"
+            android:textColorHint="#a9a9a9"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutInsertPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextCreator"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/imageViewCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_camera" />
+
+            <EditText
+                android:id="@+id/editTextInsertPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageViewCamera"
+                android:hint="Insert Pic"
+                android:textColorHint="#a9a9a9"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutInsertPic"
+            android:layout_marginTop="16dp"
+            android:entries="@array/status"
+            android:prompt="@string/status"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutAvailableDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerStatus"
+            android:layout_marginTop="16dp">
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonAddComic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutAvailableDate"
+            android:layout_marginTop="16dp"
+            android:background="#6a1b9a"
+            android:text="Add Comic"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".yrprofil">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2b2b2b">
+
+                <TextView
+                    android:id="@+id/textViewYourProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:text="Your Profile"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewDragon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewYourProfile"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="YOUR NAME"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/textViewName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-40dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayoutHeader"
+                android:layout_margin="16dp"
+                android:background="#ffffff"
+                android:elevation="4dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textViewDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/viewLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/textViewDetails"
+                    android:layout_marginTop="16dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/textViewPlaceholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewLine"
+                    android:layout_marginTop="16dp"
+                    android:text="This is a placeholder for profile picture or other information."
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

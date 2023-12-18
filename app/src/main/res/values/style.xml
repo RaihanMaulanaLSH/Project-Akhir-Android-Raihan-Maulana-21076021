@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Your other theme attributes here -->
+
+        <item name="android:editTextStyle">@style/MyEditTextStyle</item>
+    </style>
+
+    <style name="MyEditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

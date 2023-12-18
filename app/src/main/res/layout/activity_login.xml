@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallbg" />
+
+    <!-- Dark Overlay View -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" />
+
+    <!-- ConstraintLayout for Logo and Kotak -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/kotakImageView"-->
+        <!--            android:layout_width="200dp"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            android:src="@drawable/kotak"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.5"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.5" />-->
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.152" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- LinearLayout for Login Form -->
+    <!-- LinearLayout for Login Form -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+
+        <TextView
+            android:id="@+id/tv_usernamee"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Your Username"
+            android:clickable="true"
+            android:textColor="#FFFFFF" />
+
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Username"
+            android:padding="8dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_pass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Your Password"
+            android:clickable="true"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:padding="0dp"/>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Forgot your password? Click here"
+            android:clickable="true"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
